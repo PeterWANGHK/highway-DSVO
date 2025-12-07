@@ -22,6 +22,25 @@ conda activate drone-dataset-tools38
 
 detailed instructions found at: https://github.com/zxc-tju/exiD-tools/tree/master
 
+## Dataset structure: 
+```shell
+C:\exiD-tools\data\
+├── 00_tracks.csv
+├── 00_tracksMeta.csv
+├── 00_recordingMeta.csv
+├── 00_background.png
+├── 01_tracks.csv
+├── ...
+├── 25_tracks.csv          ← recording
+├── 25_tracksMeta.csv      ← Vehicle metadata
+├── 25_recordingMeta.csv   ← Recording info
+├── 25_background.png      ← Aerial image
+├── ...
+└── Maps/
+    ├── location1.osm      ← Lanelet2 HD map
+    └── location1.xodr     ← OpenDrive HD map
+```
+
 Acknowledgement of the repository: 
 ```
 @article{huang2021driving,
@@ -41,23 +60,4 @@ Acknowledgement of the dataset:
                pages={958-964},
                year={2022},
                doi={10.1109/IV51971.2022.9827305}}
-```
-              
-## Dataset structure: 
-```shell
-C:\exiD-tools\data\
-├── 00_tracks.csv
-├── 00_tracksMeta.csv
-├── 00_recordingMeta.csv
-├── 00_background.png
-├── 01_tracks.csv
-├── ...
-├── 25_tracks.csv          ← recording
-├── 25_tracksMeta.csv      ← Vehicle metadata
-├── 25_recordingMeta.csv   ← Recording info
-├── 25_background.png      ← Aerial image
-├── ...
-└── Maps/
-    ├── location1.osm      ← Lanelet2 HD map
-    └── location1.xodr     ← OpenDrive HD map
 ```
