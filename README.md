@@ -21,6 +21,16 @@ conda activate drone-dataset-tools38
 ```
 
 ## detailed instructions found at: https://github.com/zxc-tju/exiD-tools/tree/master
+Citation: 
+```
+@article{huang2021driving,
+  title={Driving Behavior Modeling Using Naturalistic Human Driving Data With Inverse Reinforcement Learning},
+  author={Huang, Zhiyu and Wu, Jingda and Lv, Chen},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2021},
+  publisher={IEEE}
+}
+```
 
 the dataset structure: 
 C:\exiD-tools\data\
