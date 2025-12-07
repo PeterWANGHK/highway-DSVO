@@ -2,25 +2,25 @@
 Modelling of Dynamic Social Value Orientation based on exiD dataset
 
 
-**visualization of SVO with APF in selected recording frame (example: 25):
+## visualization of SVO with APF in selected recording frame (example: 25):
 ```shell
 python exid_svo_apf_visualization.py --data_dir "C:\exiD-tools\data" --recording 25 --output_dir "./output"
 ```
 
-**car interaction visualization (original version, needs enhancement):
+## car interaction visualization (original version, needs enhancement):
 ```shell
 python exid_real_data_viz.py --data_dir "C:\exiD-tools\data" --recording 25
 ```
 
 
-**The following programs need the activation of "drone-dataset-tool38":
+## The following programs need the activation of "drone-dataset-tool38":
 ```shell
 cd "C:\exiD-tools\data"
 cd src
 conda activate drone-dataset-tools38
 ```
 
-detailed instructions found at: https://github.com/zxc-tju/exiD-tools/tree/master
+## detailed instructions found at: https://github.com/zxc-tju/exiD-tools/tree/master
 
 the dataset structure: 
 C:\exiD-tools\data\
