@@ -2,6 +2,11 @@
 Modelling of Dynamic Social Value Orientation based on exiD dataset
 
 (My exiD dataset has been archived in "C:\exiD-tools\data", so the data directory needs to be tailored for other users)
+## complete visualization of mutual SVO with symmetric evaluations:
+```shell
+python exid_enhanced_svo_visualization.py --data_dir "C:\exiD-tools\data" --recording 25 --output_dir "./enhanced_output"
+```
+
 ## visualization of SVO with APF in selected recording frame (example: 25):
 ```shell
 python exid_svo_apf_visualization.py --data_dir "C:\exiD-tools\data" --recording 25 --output_dir "./output"
