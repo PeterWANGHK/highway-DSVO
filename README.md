@@ -18,7 +18,7 @@ python exid_svo_apf_visualization.py --data_dir "C:\exiD-tools\data" --recording
 python exid_optimized_visualization.py --data_dir /path/to/exid/data --recording 25
 
 # Static analysis plots
-python exid_interactive_visualization.py --data_dir /path/to/exid/data --recording 25
+python exid_corrected_svo_visualization.py --data_dir /path/to/exid/data --recording 25
 ```
 
 ## The following programs need the activation of "drone-dataset-tool38":
