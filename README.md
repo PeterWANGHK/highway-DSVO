@@ -1,5 +1,5 @@
-# exiD-DSVO
-Modelling of Dynamic Social Value Orientation based on exiD dataset with state-of-the-art interaction fields
+# exiD Interaction Fields Modeling
+Modelling of state-of-the-art Interaction Fields with Social Value Orientation based on exiD dataset
 (My exiD dataset has been archived in "C:\exiD-tools\data", so the data directory needs to be tailored for other users)
 
 # GVF Modeling
