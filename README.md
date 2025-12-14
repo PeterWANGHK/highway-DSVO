@@ -60,7 +60,8 @@ python exid_optimized_visualization.py --data_dir /path/to/exid/data --recording
 # Static analysis plots
 python exid_corrected_svo_visualization.py --data_dir /path/to/exid/data --recording 25
 ```
-## Bayseian Survival Analysis (inspired from paper "Bayesian survival analysis of interactions between truck platoons and surrounding vehicles through a two-dimensional surrogate safety measure"):
+## Bayseian Survival Analysis:
+### (inspired from paper "Bayesian survival analysis of interactions between truck platoons and surrounding vehicles through a two-dimensional surrogate safety measure")
 ```shell
 python exid_bayesian_platoon.py --data_dir C:\exiD-tools\data --recording 25 --output_dir ./your_defined_subfolder
 ```
