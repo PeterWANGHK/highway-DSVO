@@ -82,5 +82,3 @@ Drone-view CSV → Preprocessing → Field Modeling (GVF, APF, etc.)
 * Add a **field-consistency reward**: Penalize deviation from the direction of the gradient.
 * Experiment with **pretraining the SVO model** using field → SVO data from your script to bootstrap better behavior priors.
 * Encode truck-specific behavior as field modulation (e.g., wider blind spot = higher “repulsive” field).
-
-Would you like a code template for integrating GVF field outputs into SAC/PPO agents?
