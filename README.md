@@ -96,7 +96,26 @@ C:\exiD-tools\data\
     ├── location1.osm      ← Lanelet2 HD map
     └── location1.xodr     ← OpenDrive HD map
 ```
+### Proposed Integration Pipeline
 
+```text
+Drone-view CSV → Preprocessing → Field Modeling (GVF, APF, etc.)
+                                ↓
+                       Gradient / Feature Encoding
+                                ↓
+           ┌────────────────────┴────────────────────┐
+           ↓                                         ↓
+    Game-Theoretic Utility                SVO Inference Module
+       (Asym. for Trucks)                 (Field → Aggression/Yield)
+           ↓                                         ↓
+     Action Proposal or                     Action Priority Adjustment
+        Reward Shaping                               ↓
+           ↓                                         ↓
+            └──────────────→ RL Agent ←─────────────┘
+                         (SAC, PPO, Hybrid Policy)
+```
+
+---
 ### Citation of the exiD dataset:
 ```
 @inproceedings{exiDdataset,
