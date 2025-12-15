@@ -76,7 +76,7 @@ Drone-view CSV → Preprocessing → Field Modeling (GVF, APF, etc.)
 
 ---
 
-## 📌 Implementation Suggestions
+## Remarks
 
 * Start by wrapping field maps as **additional input channels** to an RL agent.
 * Add a **field-consistency reward**: Penalize deviation from the direction of the gradient.
