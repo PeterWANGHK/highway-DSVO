@@ -55,7 +55,7 @@ In the `exid_gvf_svo_visualization.py` script, this is already implemented:
 
 ---
 
-### Suggested Integration Pipeline
+### Proposed Integration Pipeline
 
 ```text
 Drone-view CSV → Preprocessing → Field Modeling (GVF, APF, etc.)
