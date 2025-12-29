@@ -186,14 +186,6 @@ We **never set w = 0** because:
 - The minimum weight represents "we know something is there but uncertain"
 - Planning layers should treat low-visibility vehicles with extra caution
 
-### 5.3 Connection to PINN
-
-For your Physics-Informed Neural Network:
-- The visibility weight can be learned or constrained by physics
-- PDE constraint: $\frac{\partial w}{\partial t} \propto v_{relative}$ (visibility evolves with motion)
-- The PINN can learn a more sophisticated visibility model from data
-
----
 
 ## 6. Visualization Guide
 
@@ -219,7 +211,7 @@ The generated comparison figure shows:
 
 ---
 
-## 7. Extension to Your Unified Field Model
+## 7. Extension to Unified Field Model
 
 ### 7.1 Integration with Role Classification
 
@@ -246,15 +238,6 @@ Both A and B have reduced fields **from each other's perspective**:
 - A's field contribution to B is reduced
 - B's field contribution to A is reduced
 - This creates a "mutual uncertainty zone"
-
-### 7.3 PINN Learning Objectives
-
-Your PINN can learn:
-1. **Visibility function** from trajectory data
-2. **Risk amplification** in occlusion zones
-3. **Prediction uncertainty** that correlates with visibility
-
----
 
 ## 8. Comparison Metrics
 
@@ -297,13 +280,3 @@ X, Y, VX, VY, W = construct_occlusion_aware_gvf(
 ```
 
 ---
-
-## 10. Summary
-
-| Concept | Standard Field | Occlusion-Aware Field |
-|---------|---------------|----------------------|
-| Vehicle weights | All equal (1.0) | Visibility-dependent |
-| Occlusion | Ignored | Explicitly modeled |
-| Uncertainty | Not represented | Lower weight = higher uncertainty |
-| Dynamics | Static | Acceleration-dependent |
-| Safety | May miss hidden vehicles | Minimum weight ensures awareness |
