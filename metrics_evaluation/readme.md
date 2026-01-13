@@ -22,7 +22,8 @@ exid_metrics_integration.py — Integration with exiD data loader
 
 ### Example outputs:
 
-!(metrics_panel.png)
+![The example evaluation outputs based on exiD merging scenarios](metrics_panel.png)
+
 ### Usage with exiD
 ```shell
 python exid_metrics_integration.py --data_dir /path/to/exiD --recording 25 --ego_id 123 --frame 500 --methods gvf edrf ada
