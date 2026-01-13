@@ -22,7 +22,7 @@ exid_metrics_integration.py — Integration with exiD data loader
 
 ### Example outputs:
 
-![The example evaluation outputs based on exiD merging scenarios](metrics_panel.png)
+![The example evaluation outputs based on exiD merging scenarios](metrics_panels.png)
 
 ### Usage with exiD
 ```shell
