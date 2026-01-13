@@ -18,7 +18,9 @@
 - 
 
 risk_field_metrics.py — Core metrics implementation with standalone demo
+
 exid_metrics_integration.py — Integration with your exiD data loader
+
 Visualizations — Comprehensive comparison of GVF, EDRF, and ADA methods
 
 
