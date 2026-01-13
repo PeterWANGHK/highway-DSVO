@@ -21,8 +21,8 @@ risk_field_metrics.py — Core metrics implementation with standalone demo
 exid_metrics_integration.py — Integration with your exiD data loader
 Visualizations — Comprehensive comparison of GVF, EDRF, and ADA methods
 
-Usage with exiD Data
-# With your existing exiD data
+
+### Usage with exiD
 ```shell
 python exid_metrics_integration.py --data_dir /path/to/exiD --recording 25 --ego_id 123 --frame 500 --methods gvf edrf ada
 ```
