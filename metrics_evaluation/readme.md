@@ -20,7 +20,9 @@ risk_field_metrics.py — Core metrics implementation with standalone demo
 
 exid_metrics_integration.py — Integration with exiD data loader
 
+### Example outputs:
 
+!(metrics_panel.png)
 ### Usage with exiD
 ```shell
 python exid_metrics_integration.py --data_dir /path/to/exiD --recording 25 --ego_id 123 --frame 500 --methods gvf edrf ada
