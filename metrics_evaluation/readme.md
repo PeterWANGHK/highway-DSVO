@@ -44,4 +44,12 @@ python unified_metrics_integration.py --data_dir ./exiD --recording 25 --ego_id 
 
 # Save to JSON
 python unified_metrics_integration.py --demo --output results.json
+
+# evaluation together with the traffic snapshot:
+# Step 1: Generate scenario snapshot with role analysis
+python exid_role_occlusion_analysis.py --data_dir ./data --recording 25 --ego_id 123 --frame 500 --output_dir ./output_roles
+
+# Step 2: Use the exported JSON in field visualization
+python integrated_field_traffic_viz.py --scenario ./output_roles/rec25_ego123_frame500/scenario_snapshot.json --methods gvf edrf ada apf --output_dir ./output_integrated
 ```
+
