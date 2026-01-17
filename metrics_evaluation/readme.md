@@ -60,14 +60,16 @@ python integrated_field_traffic_viz.py --data_dir ./data --recording 25 --ego_id
 # Auto-select ego and frame:
 python integrated_field_traffic_viz.py --data_dir ./data --recording 25
 
-# Demo mode (no data required):
-python integrated_field_traffic_viz.py --demo
-
 # Light theme output:
 python integrated_field_traffic_viz.py --scenario scenario.json --light-theme
 
 # Custom output directory:
 python integrated_field_traffic_viz.py --scenario scenario.json --output_dir ./my_figures
+```
+### exid field analysis
+```shell
+# With exiD data:
+python exid_field_analysis.py --data_dir ./data --recording 25 --ego_id 123 --frame 500
 ```
 ### evaluation together with the traffic snapshot:
 ```shell
