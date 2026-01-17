@@ -28,3 +28,20 @@ exid_metrics_integration.py — Integration with exiD data loader
 ```shell
 python exid_metrics_integration.py --data_dir /path/to/exiD --recording 25 --ego_id 123 --frame 500 --methods gvf edrf ada
 ```
+### for unified evaluation
+```shell
+# Demo mode (no data required)
+python unified_metrics_integration.py --demo --methods gvf edrf ada apf
+
+# Only field metrics on specific methods
+python unified_metrics_integration.py --demo --methods gvf ada --metrics field
+
+# Only behavioral metrics
+python unified_metrics_integration.py --demo --methods gvf apf --metrics behavioral
+
+# With exiD data
+python unified_metrics_integration.py --data_dir ./exiD --recording 25 --ego_id 123
+
+# Save to JSON
+python unified_metrics_integration.py --demo --output results.json
+```
