@@ -1,6 +1,6 @@
 How the PDE Describes Risk Under Uncertainty
 The Governing Equation
-\tau \frac{\partial^2 R}{\partial t^2} + \frac{\partial R}{\partial t} + \nabla \cdot (\mathbf{v} R) = D\nabla^2 R + Q - \lambda R
+τ∂2R∂t2+∂R∂t+∇⋅(vR)=D∇2R+Q−λR\tau \frac{\partial^2 R}{\partial t^2} + \frac{\partial R}{\partial t} + \nabla \cdot (\mathbf{v} R) = D\nabla^2 R + Q - \lambda Rτ∂t2∂2R​+∂t∂R​+∇⋅(vR)=D∇2R+Q−λR
 Why This Captures Uncertainty Well
 PDE TermUncertainty InterpretationVisible in FiguresQ_occ (Occlusion Source)Injects "phantom risk" where we CANNOT see. Models P(hazard exists | occluded)Red region inside blue dashed occlusion boundaryD increased in occlusionUncertainty about WHERE the hazard is → risk spreads widerBroader, more diffuse risk in blind zoneτ ∂²R/∂t² (Inertia)Finite propagation speed c=√(D/τ) ≈ 9 m/sWave propagation figure shows gradual buildup, not instantλR (Decay)Risk diminishes when uncertainty resolvesRisk lower at domain edges
 Key Observations from the Figures
